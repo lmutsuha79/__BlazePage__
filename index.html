@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body class="bg-[rgba(12,2,34,1)] flex flex-col items-stretch">
+    <!-- Hero Section with Background -->
+    <div class="flex flex-col relative min-h-[846px] w-full max-md:max-w-full">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/af6226df8dbf12ac5db627c6a42b87f9c393bceb?placeholderIfAbsent=true"
+        class="absolute h-full w-full object-cover inset-0"
+        alt="Background"
+      />
+
+      <!-- Navbar -->
+      <nav
+        class="relative bg-[rgba(0,8,63,0.49)] flex w-full overflow-hidden justify-center px-6 py-4 max-md:max-w-full max-md:px-5"
+      >
+        <div
+          class="flex min-w-60 w-[1200px] items-center gap-[40px_100px] justify-between flex-wrap"
+        >
+          <a href="/">
+            <svg
+              width="130"
+              height="42"
+              viewBox="0 0 130 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.60298 16.1498C6.43908 16.1498 7.25776 16.2587 8.05901 16.4764C8.86898 16.6854 9.79653 17.0295 10.8416 17.5085C11.6429 17.8743 12.3788 18.1617 13.0495 18.3707C13.7288 18.5797 14.382 18.7321 15.0091 18.8279C15.6448 18.915 16.3067 18.9586 16.9948 18.9586H17.9093L17.6872 22.9692C16.0672 23.0911 14.4909 23.3481 12.958 23.74C11.4252 24.1232 10.0447 24.6153 8.81673 25.2162C7.58871 25.8172 6.60891 26.5052 5.87733 27.2803C5.15445 28.0555 4.79302 28.8916 4.79302 29.7886C4.79302 30.5899 5.04123 31.2866 5.53766 31.8789C6.04281 32.4711 6.82229 32.9283 7.87612 33.2506C8.93866 33.5728 10.306 33.7339 11.9782 33.7339C12.6488 33.7339 13.3412 33.6991 14.0554 33.6294C14.7696 33.5685 15.475 33.4814 16.1718 33.3682C16.8685 33.2549 17.5043 33.1199 18.0791 32.9632L18.0922 36.7648C17.4128 37.0348 16.6856 37.2569 15.9105 37.4311C15.1353 37.6139 14.3471 37.7489 13.5459 37.836C12.7446 37.9231 11.9651 37.9667 11.2074 37.9667C9.1172 37.9667 7.36662 37.6357 5.95571 36.9738C4.5448 36.3206 3.48226 35.4105 2.7681 34.2434C2.06264 33.0851 1.70991 31.7482 1.70991 30.2328C1.70991 29.1964 1.91023 28.2122 2.31086 27.2803C2.71149 26.3484 3.29501 25.4906 4.06143 24.7067C4.82785 23.9229 5.75975 23.2305 6.85713 22.6295C7.9545 22.0199 9.19558 21.5191 10.5804 21.1272C11.9739 20.7353 13.4936 20.4696 15.1397 20.3303L14.591 21.8588C14.173 21.8501 13.6635 21.7804 13.0625 21.6497C12.4616 21.5191 11.8563 21.3623 11.2466 21.1794C10.637 20.9966 10.1144 20.8267 9.67895 20.67C8.97349 20.4348 8.25933 20.2301 7.53645 20.0559C6.82229 19.873 6.05151 19.7816 5.22413 19.7816C4.6406 19.7816 4.10062 19.8382 3.60419 19.9514C3.10776 20.0647 2.71584 20.1866 2.42843 20.3172L2.41537 16.9336C2.68536 16.7943 2.97712 16.668 3.29066 16.5548C3.6129 16.4329 3.96563 16.3371 4.34884 16.2674C4.73205 16.189 5.1501 16.1498 5.60298 16.1498ZM13.8856 20.9966H16.0803C16.0716 21.3711 16.0672 21.7543 16.0672 22.1462C16.0672 22.5294 16.0672 22.9082 16.0672 23.2827C16.0672 23.9969 16.1848 24.55 16.42 24.9419C16.6551 25.3338 17.047 25.6081 17.5957 25.7649C18.1531 25.913 18.9283 25.987 19.9211 25.987L19.5553 30.2328C17.5522 30.2328 16.0934 29.7756 15.1789 28.8611C14.2731 27.9466 13.8289 26.4921 13.8464 24.4977C13.8464 23.9142 13.8507 23.3307 13.8594 22.7471C13.8681 22.1636 13.8768 21.5801 13.8856 20.9966ZM19.5553 30.2328C19.3724 30.2328 19.2331 30.1805 19.1373 30.076C19.0415 29.9628 19.0066 29.8147 19.0328 29.6318L19.3463 26.5879C19.3899 26.1873 19.5815 25.987 19.9211 25.987C20.104 25.987 20.2434 26.0436 20.3392 26.1568C20.435 26.27 20.4742 26.4138 20.4567 26.5879L20.1301 29.6318C20.0866 30.0325 19.895 30.2328 19.5553 30.2328ZM12.8535 29.0178L10.6587 31.2518L8.45093 29.0048L10.6587 26.797L12.8535 29.0178ZM22.0187 33.6686L20.0329 35.6674L18.0472 33.6686L20.0329 31.6568L22.0187 33.6686ZM26.0816 33.6686L24.0958 35.6674L22.1101 33.6686L24.0958 31.6568L26.0816 33.6686ZM23.868 18.6581C24.138 19.6684 24.3427 20.6133 24.482 21.493C24.6301 22.3726 24.7041 23.2305 24.7041 24.0666C24.7041 25.1378 24.5517 26.0697 24.2469 26.8623C23.9508 27.6548 23.5109 28.3124 22.9274 28.8349C22.4048 29.314 21.7342 29.6667 20.9156 29.8931C20.1056 30.1196 19.1171 30.2328 17.95 30.2328L18.3158 25.987C18.9603 25.987 19.5221 25.9391 20.0011 25.8433C20.4888 25.7388 20.8633 25.5559 21.1246 25.2946C21.3946 25.0246 21.5296 24.6458 21.5296 24.158C21.5296 23.7922 21.4773 23.3002 21.3728 22.6818C21.277 22.0634 21.1551 21.4102 21.007 20.7222C20.8677 20.0255 20.7283 19.3853 20.589 18.8018L23.868 18.6581ZM18.3158 25.987C18.4987 25.987 18.6381 26.0436 18.7339 26.1568C18.8297 26.2613 18.8645 26.405 18.8384 26.5879L18.5248 29.6318C18.4813 30.0325 18.2897 30.2328 17.95 30.2328C17.7671 30.2328 17.6278 30.1805 17.532 30.076C17.4362 29.9628 17.397 29.8147 17.4144 29.6318L17.741 26.5879C17.7845 26.1873 17.9762 25.987 18.3158 25.987ZM33.2814 30.2328C31.9053 30.2328 30.7862 30.0412 29.924 29.658C29.0704 29.2661 28.439 28.6433 28.0297 27.7898C27.6291 26.9363 27.4287 25.8041 27.4287 24.3932V10.5062L30.6817 10.4017V23.2436C30.6817 23.9316 30.7513 24.4759 30.8907 24.8766C31.0388 25.2772 31.3218 25.5646 31.7399 25.7388C32.1666 25.9043 32.8024 25.987 33.6472 25.987L33.2814 30.2328ZM33.2814 30.2328C33.0985 30.2328 32.9592 30.1805 32.8634 30.076C32.7763 29.9628 32.7414 29.8147 32.7588 29.6318L33.0724 26.5879C33.1246 26.1873 33.3162 25.987 33.6472 25.987C33.8301 25.987 33.9694 26.0436 34.0652 26.1568C34.161 26.27 34.2002 26.4138 34.1828 26.5879L33.8562 29.6318C33.8127 30.0325 33.6211 30.2328 33.2814 30.2328ZM38.0179 33.6556L35.8231 35.8764L33.6153 33.6425L35.8231 31.4347L38.0179 33.6556ZM37.6072 18.6581C37.8771 19.6684 38.0818 20.6133 38.2212 21.493C38.3692 22.3726 38.4432 23.2305 38.4432 24.0666C38.4432 25.1378 38.2908 26.0697 37.986 26.8623C37.6899 27.6548 37.2501 28.3124 36.6665 28.8349C36.144 29.314 35.4734 29.6667 34.6547 29.8931C33.8447 30.1196 32.8562 30.2328 31.6892 30.2328L32.055 25.987C32.6994 25.987 33.2612 25.9391 33.7402 25.8433C34.2279 25.7388 34.6024 25.5559 34.8637 25.2946C35.1337 25.0246 35.2687 24.6458 35.2687 24.158C35.2687 23.7922 35.2164 23.3002 35.1119 22.6818C35.0161 22.0634 34.8942 21.4102 34.7461 20.7222C34.6068 20.0255 34.4674 19.3853 34.3281 18.8018L37.6072 18.6581ZM32.055 25.987C32.2379 25.987 32.3772 26.0436 32.473 26.1568C32.5688 26.2613 32.6036 26.405 32.5775 26.5879L32.264 29.6318C32.2204 30.0325 32.0288 30.2328 31.6892 30.2328C31.5063 30.2328 31.3669 30.1805 31.2711 30.076C31.1753 29.9628 31.1361 29.8147 31.1535 29.6318L31.4801 26.5879C31.5237 26.1873 31.7153 25.987 32.055 25.987ZM51.6394 21.1403L51.9399 22.721C52.1054 23.6093 52.3057 24.2887 52.5409 24.759C52.776 25.2293 53.1244 25.5515 53.586 25.7257C54.0563 25.8999 54.7138 25.987 55.5586 25.987L55.1929 30.2328C54.3132 30.2328 53.5642 30.076 52.9458 29.7625C52.3275 29.4402 51.8006 28.9351 51.3651 28.2471L51.8615 26.5618C51.9312 26.5879 52.0183 26.7621 52.1228 27.0844C52.2273 27.4066 52.2796 27.7637 52.2796 28.1556C52.1577 29.8278 51.7701 31.2518 51.1169 32.4275C50.4637 33.612 49.6232 34.5134 48.5955 35.1318C47.5765 35.7502 46.4574 36.0593 45.2381 36.0593C44.8984 36.0593 44.5631 36.0332 44.2322 35.9809C43.9012 35.9374 43.6051 35.8764 43.3438 35.7981C43.0738 35.7197 42.8474 35.6369 42.6645 35.5498V31.9442C42.9693 32.0051 43.2916 32.053 43.6312 32.0879C43.9709 32.1227 44.3584 32.1401 44.7939 32.1401C45.8565 32.1401 46.7317 31.905 47.4198 31.4347C48.1078 30.9557 48.613 30.3504 48.9352 29.6188C49.2662 28.8872 49.4316 28.1382 49.4316 27.3718C49.4316 27.1366 49.4186 26.9145 49.3924 26.7055C49.375 26.4965 49.3315 26.2047 49.2618 25.8302C49.1921 25.4557 49.0876 24.9157 48.9483 24.2103C48.8089 23.4961 48.613 22.5163 48.3604 21.2709L51.6394 21.1403ZM55.1929 30.2328C55.01 30.2328 54.8706 30.1805 54.7748 30.076C54.679 29.9628 54.6398 29.8147 54.6572 29.6318L54.9838 26.5879C55.0361 26.1873 55.2277 25.987 55.5586 25.987C55.7415 25.987 55.8809 26.0436 55.9767 26.1568C56.0725 26.27 56.1117 26.4138 56.0943 26.5879L55.7677 29.6318C55.7241 30.0325 55.5325 30.2328 55.1929 30.2328ZM51.9922 16.6985L49.7974 18.9324L47.5896 16.6854L49.7974 14.4776L51.9922 16.6985ZM57.6562 33.6686L55.6705 35.6674L53.6847 33.6686L55.6705 31.6568L57.6562 33.6686ZM61.7191 33.6686L59.7334 35.6674L57.7476 33.6686L59.7334 31.6568L61.7191 33.6686ZM59.5055 18.6581C59.7755 19.6684 59.9802 20.6133 60.1195 21.493C60.2676 22.3726 60.3416 23.2305 60.3416 24.0666C60.3416 25.1378 60.1892 26.0697 59.8844 26.8623C59.5883 27.6548 59.1485 28.3124 58.5649 28.8349C58.0424 29.314 57.3718 29.6667 56.5531 29.8931C55.7431 30.1196 54.7546 30.2328 53.5876 30.2328L53.9533 25.987C54.5978 25.987 55.1596 25.9391 55.6386 25.8433C56.1263 25.7388 56.5008 25.5559 56.7621 25.2946C57.0321 25.0246 57.1671 24.6458 57.1671 24.158C57.1671 23.7922 57.1148 23.3002 57.0103 22.6818C56.9145 22.0634 56.7926 21.4102 56.6445 20.7222C56.5052 20.0255 56.3658 19.3853 56.2265 18.8018L59.5055 18.6581ZM53.9533 25.987C54.1362 25.987 54.2756 26.0436 54.3714 26.1568C54.4672 26.2613 54.502 26.405 54.4759 26.5879L54.1624 29.6318C54.1188 30.0325 53.9272 30.2328 53.5876 30.2328C53.4047 30.2328 53.2653 30.1805 53.1695 30.076C53.0737 29.9628 53.0345 29.8147 53.0519 29.6318L53.3785 26.5879C53.4221 26.1873 53.6137 25.987 53.9533 25.987ZM66.1232 30.2328C65.4613 30.2328 64.7907 30.2197 64.1114 30.1936C63.4321 30.1675 62.744 30.1283 62.0473 30.076V26.2091C62.744 26.2178 63.4364 26.2221 64.1244 26.2221C64.8212 26.2221 65.5179 26.2221 66.2147 26.2221C67.6517 26.2221 68.7709 26.1089 69.5721 25.8825C70.3821 25.656 70.9526 25.2685 71.2835 24.7198C71.6145 24.1624 71.7799 23.396 71.7799 22.4205V10.5062L75.0329 10.4017V23.1782C75.0329 23.9447 75.1069 24.5325 75.255 24.9419C75.4117 25.3425 75.6948 25.6168 76.1041 25.7649C76.5222 25.913 77.1275 25.987 77.92 25.987L77.5542 30.2328C76.6223 30.2328 75.808 30.0978 75.1113 29.8278C74.4232 29.5578 73.8832 29.1267 73.4913 28.5345C73.1081 27.9422 72.8947 27.1715 72.8512 26.2221V25.5036L73.2692 25.5298C73.1734 27.0713 72.5464 28.2427 71.388 29.044C70.2297 29.8365 68.4748 30.2328 66.1232 30.2328ZM68.3702 27.9597L62.7266 13.7591L66.084 13.6677L71.0092 26.2613C70.9047 26.6533 70.639 27.0234 70.2123 27.3718C69.7942 27.7202 69.1802 27.9161 68.3702 27.9597ZM77.5542 30.2328C77.3713 30.2328 77.232 30.1805 77.1362 30.076C77.0491 29.9628 77.0142 29.8147 77.0317 29.6318L77.3583 26.5879C77.4018 26.1873 77.5891 25.987 77.92 25.987C78.1029 25.987 78.2423 26.0436 78.3381 26.1568C78.4339 26.27 78.4731 26.4138 78.4556 26.5879L78.129 29.6318C78.0855 30.0325 77.8939 30.2328 77.5542 30.2328ZM82.2776 33.6556L80.0829 35.8764L77.8751 33.6425L80.0829 31.4347L82.2776 33.6556ZM81.8669 18.6581C82.1369 19.6684 82.3416 20.6133 82.4809 21.493C82.629 22.3726 82.703 23.2305 82.703 24.0666C82.703 25.1378 82.5506 26.0697 82.2458 26.8623C81.9497 27.6548 81.5098 28.3124 80.9263 28.8349C80.4037 29.314 79.7331 29.6667 78.9145 29.8931C78.1045 30.1196 77.116 30.2328 75.9489 30.2328L76.3147 25.987C76.9592 25.987 77.521 25.9391 78 25.8433C78.4877 25.7388 78.8622 25.5559 79.1235 25.2946C79.3935 25.0246 79.5285 24.6458 79.5285 24.158C79.5285 23.7922 79.4762 23.3002 79.3717 22.6818C79.2759 22.0634 79.154 21.4102 79.0059 20.7222C78.8666 20.0255 78.7272 19.3853 78.5879 18.8018L81.8669 18.6581ZM76.3147 25.987C76.4976 25.987 76.637 26.0436 76.7328 26.1568C76.8286 26.2613 76.8634 26.405 76.8373 26.5879L76.5237 29.6318C76.4802 30.0325 76.2886 30.2328 75.9489 30.2328C75.766 30.2328 75.6267 30.1805 75.5309 30.076C75.4351 29.9628 75.3959 29.8147 75.4133 29.6318L75.7399 26.5879C75.7835 26.1873 75.9751 25.987 76.3147 25.987Z"
+                fill="#ECECEC"
+              />
+              <path
+                d="M125.015 12.4609L125.011 12.4638C126.591 14.0465 127.845 15.9239 128.701 17.9902C129.559 20.0605 130 22.2796 130 24.5205C130 26.7613 129.559 28.9805 128.701 31.0508C127.844 33.121 126.587 35.0023 125.002 36.5869L125.023 36.6074C123.438 38.1919 121.557 39.4491 119.486 40.3066C117.416 41.1641 115.197 41.6054 112.956 41.6054C110.715 41.6054 108.496 41.1641 106.426 40.3066C104.356 39.4491 102.474 38.1919 100.89 36.6074L100.869 36.6279C99.2848 35.0434 98.0276 33.162 97.17 31.0918C96.3125 29.0215 95.8713 26.8023 95.8712 24.5615C95.8712 22.3207 96.3126 20.1015 97.17 18.0312C98.0276 15.9609 99.2848 14.0796 100.869 12.4951L112.936 24.5615L112.956 24.541L112.936 24.5205L112.939 24.5166C111.359 22.9341 110.105 21.0571 109.249 18.9912C108.392 16.9209 107.95 14.7018 107.95 12.4609C107.95 10.22 108.392 8.00098 109.249 5.93064C110.107 3.86029 111.364 1.97908 112.948 0.394505L125.015 12.4609Z"
+                fill="#FF00E1"
+              />
+            </svg>
+          </a>
+          <div
+            class="self-stretch flex min-w-60 items-center gap-3 text-base my-auto"
+          >
+            <button
+              class="bg-[rgba(38,75,204,1)] shadow-[0px_2px_2px_rgba(0,21,176,1)] self-stretch flex min-h-12 items-center gap-1 overflow-hidden text-white font-bold justify-center my-auto pl-4 pr-5 py-3 rounded-[10px]"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/065718920845e894cea8c760cf8d26717bdbac64?placeholderIfAbsent=true"
+                class="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+                alt="Icon"
+              />
+              <span class="self-stretch my-auto">ابدأ بدولار واحد</span>
+            </button>
+            <button
+              class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] self-stretch min-h-12 overflow-hidden text-[rgba(236,236,236,1)] font-bold my-auto px-5 py-[18px] rounded-[10px]"
+            >
+              تسجيل الدخول
+            </button>
+          </div>
+          <!-- logo -->
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div
+        class="relative flex w-full overflow-hidden flex-wrap pl-[41px] pr-[72px] py-20 max-md:max-w-full max-md:px-5"
+      >
+        <div class="min-w-60 grow shrink w-[707px] max-md:max-w-full">
+          <div class="flex w-full flex-col items-stretch max-md:max-w-full">
+            <div
+              class="flex w-full flex-col items-sta font-normal text-right leading-[1.6] max-md:max-w-full"
+            >
+              <div class="w-full">
+                <div
+                  class="w-fit bg-[rgba(14,3,105,1)] border flex items-center gap-2.5 text-lg text-white justify-center flex-wrap px-4 py-1.5 rounded-[22px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full"
+                >
+                  <p class="self-stretch my-auto">
+                    أول مصمّم صفحات هبوط بالذكاء الاصطناعي في العالم العربي
+                  </p>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc0ff575aad4aa541301a29bb388cc5e151dd0ce?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+                    alt="AI Icon"
+                  />
+                </div>
+              </div>
+              <h1
+                dir="rtl"
+                class="text-[76px] font-medium leading-[90px] tracking-[-2.28px] self-stretch mt-5 max-md:max-w-full max-md:text-[40px] max-md:leading-[53px] text-white"
+              >
+                صمّم صفحة هبوط في ثوانٍ… وبدولار واحد فقط!
+              </h1>
+              <p
+                class="max-w-full text-xl text-[rgba(134,149,251,1)] mt-5 max-md:max-w-full"
+              >
+                حوّل صورة وسعر منتجك إلى صفحة تبيع، بدون مصمم، وبتكلفة رمزية.
+              </p>
+            </div>
+            <div class="flex gap-4 text-base mt-8">
+              <button
+                class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 overflow-hidden text-[rgba(236,236,236,1)] font-bold px-5 py-[18px] rounded-[10px]"
+              >
+                تسجيل الدخول
+              </button>
+              <button
+                class="bg-[rgba(38,75,204,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] flex min-h-12 items-center gap-1 overflow-hidden text-white font-bold justify-center pl-4 pr-5 py-3 rounded-[10px]"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/065718920845e894cea8c760cf8d26717bdbac64?placeholderIfAbsent=true"
+                  class="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+                  alt="Icon"
+                />
+                <span class="self-stretch my-auto">ابدأ بدولار واحد</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-col items-stretch mt-10 max-md:max-w-full"
+          >
+            <div
+              class="text-[rgba(134,149,251,1)] text-xl font-normal leading-[1.6] text-right max-md:max-w-full"
+            >
+              أمثلة
+            </div>
+            <div class="flex gap-6 flex-wrap mt-4 max-md:max-w-full">
+              <div
+                class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+              >
+                <img
+                  src="/rgb.png"
+                  class="aspect-[1] object-contain w-20"
+                  alt="Example 1"
+                />
+              </div>
+              <div
+                class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+              >
+                <img
+                  src="/grill.png"
+                  class="aspect-[1] object-contain w-20"
+                  alt="Example 2"
+                />
+              </div>
+              <div
+                class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+              >
+                <img
+                  src="/rgb.png"
+                  class="aspect-[1] object-contain w-20"
+                  alt="Example 3"
+                />
+              </div>
+              <div
+                class="border flex flex-col justify-center w-[104px] p-3 rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid"
+              >
+                <img
+                  src="/grill.png"
+                  class="aspect-[1] object-contain w-20"
+                  alt="Example 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f455ad5efefce26a6d3d6c52b6769d3bbff209a?placeholderIfAbsent=true"
+          class="aspect-[0.85] object-contain w-[414px] min-w-60 grow shrink max-md:max-w-full"
+          alt="Hero Image"
+        />
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section
+      class="bg-[rgba(1,8,38,1)] flex w-full flex-col items-stretch px-5 py-20 max-md:max-w-full"
+    >
+      <div
+        class="flex flex-col relative min-h-[183px] w-full items-stretch text-center py-6 max-md:max-w-full"
+      >
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/77dd8fcdd5f5a13f6e23fe88fd69224771c31d6f?placeholderIfAbsent=true"
+          class="absolute h-full w-full object-cover inset-0"
+          alt="Features Background"
+        />
+        <h2
+          class="relative w-full gap-2.5 text-[56px] text-[rgba(236,236,236,1)] font-medium tracking-[-0.32px] leading-[1.2] p-2.5 max-md:max-w-full max-md:text-[40px]"
+        >
+          لماذا يختار المئات BlazePage كل يوم؟
+        </h2>
+        <p
+          class="relative text-[rgba(134,149,251,1)] text-xl font-normal leading-[1.6] self-center mt-4 max-md:max-w-full"
+        >
+          مميزات مصمّمة خصيصًا لتساعدك على البيع بسرعة وسهولة وبتكلفة رمزية.
+        </p>
+      </div>
+      <div class="self-center w-[1200px] max-w-full mt-20 max-md:mt-10">
+        <div class="flex w-full gap-6 flex-wrap max-md:max-w-full">
+          <!-- Feature Card 1 -->
+          <div
+            class="border flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-[60px] rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full max-md:px-5"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a7c717edcbe18aeab5af797f27ee21eb8f1a870b?placeholderIfAbsent=true"
+              class="aspect-[1] object-contain w-[50px] shadow-[0px_0px_11px_rgba(255,92,0,1)] rounded-[10px]"
+              alt="Fast Icon"
+            />
+            <div
+              class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full"
+            >
+              <div class="w-full text-right max-md:max-w-full">
+                <h3
+                  class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full"
+                >
+                  سريع
+                </h3>
+                <p
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full"
+                >
+                  وداعًا للانتظار أو التواصل الطويل مع المصممين. مع BlazePage،
+                  صفحتك جاهزة للنشر خلال دقائق، فقط أدخل صورة المنتج وسعره…
+                  وسيتولى النظام الباقي.
+                </p>
+              </div>
+              <button
+                class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-8 px-5 py-[18px] rounded-[10px]"
+              >
+                ابدأ بدولار واحد
+              </button>
+            </div>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div
+            class="border flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-[60px] rounded-[20px] border-[rgba(255,255,255,0.2)] border-solid max-md:max-w-full max-md:px-5"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf813acaf80fbb277ac7555fb633c7a9a62860a0?placeholderIfAbsent=true"
+              class="aspect-[1] object-contain w-[50px] shadow-[0px_0px_11px_rgba(255,92,0,1)] rounded-[10px]"
+              alt="Money Icon"
+            />
+            <div
+              class="flex w-full flex-col items-stretch mt-4 max-md:max-w-full"
+            >
+              <div class="w-full text-right max-md:max-w-full">
+                <h3
+                  class="text-[rgba(236,236,236,1)] text-[32px] font-medium leading-[1.3] tracking-[-0.16px] max-md:max-w-full"
+                >
+                  موفر للمال
+                </h3>
+                <p
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-6 mt-2.5 max-md:max-w-full"
+                >
+                  التصميم التقليدي قد يكلفك 100 دولار أو أكثر لكل صفحة.
+                  BlazePage يقدّم لك نفس النتيجة (وأحيانًا أفضل!) مقابل دولار
+                  واحد فقط. مثالي لروّاد الأعمال وأصحاب المشاريع الصغيرة.
+                </p>
+              </div>
+              <button
+                class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-8 px-5 py-[18px] rounded-[10px]"
+              >
+                ابدأ بدولار واحد
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section
+      class="bg-[rgba(0,14,116,1)] flex w-full flex-col overflow-hidden items-center justify-center pt-20 px-20 max-md:max-w-full max-md:px-5"
+    >
+      <div class="flex w-[941px] max-w-full flex-col items-center">
+        <div
+          class="flex w-[779px] max-w-full flex-col items-center text-center"
+        >
+          <h2
+            class="text-white text-[63px] font-bold leading-none tracking-[-2.5px] max-md:max-w-full max-md:text-[40px]"
+          >
+            كل شيء في لوحة تحكّم واحدة
+          </h2>
+          <p
+            class="text-[rgba(134,149,251,1)] text-xl font-normal leading-[35px] w-[485px] mt-3 max-md:max-w-full"
+          >
+            صمّم، عدّل، واحفظ صفحاتك في مكان واحد — مع إمكانية التصدير بضغطة زر
+            وقت ما تحتاج.
+          </p>
+        </div>
+        <button
+          class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-6 px-5 py-[18px] rounded-[10px]"
+        >
+          ابدأ بدولار واحد
+        </button>
+      </div>
+      <div
+        class="w-[1014px] max-w-full overflow-hidden mt-11 rounded-[16px_16px_0px_0px] max-md:mt-10"
+      >
+        <div
+          class="bg-[rgba(32,32,32,1)] flex flex-col items-center justify-center px-20 py-1.5 rounded-[10px_10px_0px_0px] max-md:max-w-full max-md:px-5"
+        >
+          <div
+            class="bg-white flex w-[284px] shrink-0 max-w-full h-[18px] rounded-[36px]"
+          ></div>
+        </div>
+        <!-- Dashboard Preview Content -->
+        <div class="bg-[rgba(32,33,35,1)] p-6 rounded-b-lg">
+          <div class="flex justify-between items-center mb-6">
+            <div class="flex space-x-4">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5cc2616898b8f36411c9325ef9d809b4a2bd406c?placeholderIfAbsent=true"
+                class="w-6 h-6"
+                alt="Search"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba1641a53c7e15c49b20ac04225addc4d37d9f53?placeholderIfAbsent=true"
+                class="w-6 h-6"
+                alt="Menu"
+              />
+            </div>
+            <h3 class="text-white text-xl font-medium">Project Dashboard</h3>
+          </div>
+          <div class="gap-5 flex max-md:flex-col max-md:items-stretch">
+            <div class="w-[33%] max-md:w-full max-md:ml-0">
+              <div
+                class="bg-[rgba(30,30,30,1)] flex w-full flex-col mx-auto px-4 py-[18px] rounded-xl max-md:mt-7"
+              >
+                <div class="flex w-full max-w-[186px] flex-col">
+                  <div class="flex w-full items-center gap-[40px_128px] px-2.5">
+                    <div
+                      class="bg-[rgba(255,240,210,1)] self-stretch flex w-[38px] flex-col overflow-hidden items-center justify-center h-[38px] my-auto px-[7px] rounded-lg"
+                    >
+                      <div
+                        class="bg-[rgba(255,240,210,1)] flex w-full shrink-0 h-6"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="w-full mt-3 pl-2.5">
+                    <div class="text-white text-sm font-medium leading-none">
+                      Web Design
+                    </div>
+                    <div
+                      class="text-[rgba(169,172,174,1)] text-[11px] font-normal leading-none mt-1"
+                    >
+                      Product Design
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="self-stretch w-full max-w-[196px] text-[11px] text-white font-normal leading-none mt-5"
+                >
+                  <div
+                    class="bg-[rgba(43,43,43,1)] flex w-full gap-[40px_96px] justify-between px-3 py-1 rounded-[28px]"
+                  >
+                    <div>In progress</div>
+                    <div class="text-center">43</div>
+                  </div>
+                  <div
+                    class="flex w-full gap-[40px_100px] whitespace-nowrap justify-between mt-1 px-3 py-1 rounded-[28px]"
+                  >
+                    <div>Completed</div>
+                    <div class="text-center">16</div>
+                  </div>
+                </div>
+                <div class="flex mt-5 px-2.5">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/197068da31968236257916dd77bc00604c4c29f2?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 1"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a7d2a81f5f79f6bbba91808a15f16b4da5d16b3?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 2"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/23f406b436ead88c8d255451f40f7f1f97ab2809?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-[33%] ml-5 max-md:w-full max-md:ml-0">
+              <div
+                class="border flex w-[229px] shrink-0 h-[233px] rounded-[10px] border-white border-dashed max-md:mt-[27px]"
+              ></div>
+            </div>
+            <div class="w-[33%] ml-5 max-md:w-full max-md:ml-0">
+              <div
+                class="bg-[rgba(30,30,30,1)] flex w-full flex-col items-stretch mx-auto px-4 py-[18px] rounded-[10px] max-md:mt-7"
+              >
+                <div class="w-full max-w-[193px]">
+                  <div class="flex w-full items-center gap-[40px_128px] px-2.5">
+                    <div
+                      class="bg-[rgba(251,210,255,1)] self-stretch flex min-h-[38px] w-[38px] h-[38px] my-auto rounded-lg"
+                    ></div>
+                  </div>
+                  <div class="w-full whitespace-nowrap mt-3 pl-2.5">
+                    <div class="text-white text-sm font-medium leading-none">
+                      Branding
+                    </div>
+                    <div
+                      class="text-[rgba(169,172,174,1)] text-[11px] font-normal leading-none mt-1"
+                    >
+                      (Product)
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full max-w-[196px] text-[11px] text-white leading-none mt-5"
+                >
+                  <div
+                    class="bg-[rgba(43,43,43,1)] flex w-full gap-[40px_97px] justify-between px-3 py-1 rounded-[28px]"
+                  >
+                    <div class="font-normal">In progress</div>
+                    <div class="font-medium text-center">22</div>
+                  </div>
+                  <div
+                    class="flex w-full gap-[40px_98px] font-normal whitespace-nowrap justify-between mt-1 px-3 py-1 rounded-[28px]"
+                  >
+                    <div>Completed</div>
+                    <div class="text-center">28</div>
+                  </div>
+                </div>
+                <div class="flex mt-5 px-2.5">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/923dfbdb5d7f66216e77fed71a3112b3db775144?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 1"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2187c4063b13936058da7389b74a74798e6cca6?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 2"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/75578beb04438e481c6a52359a5b0303f08b07a6?placeholderIfAbsent=true"
+                    class="aspect-[1] object-contain w-[22px] shrink-0"
+                    alt="User 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section
+      class="bg-[rgba(1,8,38,1)] flex w-full flex-col items-stretch pt-20 pb-[120px] px-5 max-md:max-w-full max-md:pb-[100px]"
+    >
+      <div
+        class="flex flex-col relative min-h-[115px] w-full items-center text-center max-md:max-w-full"
+      >
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/59f5ecb7dca26d0504aabaf8801722c2ef9d5997?placeholderIfAbsent=true"
+          class="absolute h-full w-full object-cover inset-0"
+          alt="Pricing Background"
+        />
+        <h2
+          class="relative text-[rgba(236,236,236,1)] text-[56px] font-medium leading-[1.2] tracking-[-0.32px] max-md:max-w-full max-md:text-[40px]"
+        >
+          خطط واضحة… وأسعار تناسب الجميع
+        </h2>
+        <p
+          class="relative text-[rgba(134,149,251,1)] text-xl font-normal leading-[1.6] mt-4 max-md:max-w-full"
+        >
+          سواء كنت تبدأ مشروعك أو تطوّر عملك، اختر الخطة التي تناسبك وادفع فقط
+          لما تحتاج — بدون التزامات طويلة أو رسوم مفاجئة.
+        </p>
+      </div>
+      <div class="self-center w-[1200px] max-w-full mt-20 max-md:mt-10">
+        <div class="flex w-full gap-6 flex-wrap max-md:max-w-full">
+          <!-- Pricing Card 1 -->
+          <div
+            class="bg-[rgba(0,8,63,1)] min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5"
+          >
+            <div class="flex w-full flex-col">
+              <h3
+                class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right"
+              >
+                Inferno
+              </h3>
+              <div class="flex gap-1 mt-4">
+                <span
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4]"
+                  >/ شهر</span
+                >
+                <span
+                  class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px]"
+                  >$39</span
+                >
+              </div>
+              <p
+                class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4"
+              >
+                للشركات التي تحتاج إلى إمكانيات غير محدودة
+              </p>
+            </div>
+            <div
+              class="bg-[rgba(217,217,217,1)] flex min-h-px w-full mt-8"
+            ></div>
+            <div
+              class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8"
+            >
+              <div class="flex w-full gap-3 mt-[13px] first:mt-0">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  150 صفحة / شهر
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  مقاعد للفريق مضمنة
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">قوالب مخصصة</div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">دعم مخصص</div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 w-full overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-8 px-5 py-[18px] rounded-[10px] flex items-center justify-center gap-2"
+            >
+              <span>ابدأ الآن</span>
+            </button>
+          </div>
+
+          <!-- Pricing Card 2 -->
+          <div
+            class="bg-[rgba(0,8,63,1)] min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5"
+          >
+            <div class="flex w-full flex-col">
+              <h3
+                class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right"
+              >
+                Blaze
+              </h3>
+              <div class="flex gap-1 mt-4">
+                <span
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4]"
+                  >/ شهر</span
+                >
+                <span
+                  class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px]"
+                  >$25</span
+                >
+              </div>
+              <p
+                class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4"
+              >
+                مثالي للشركات النامية ذات المنتجات المتعددة
+              </p>
+            </div>
+            <div
+              class="bg-[rgba(217,217,217,1)] flex min-h-px w-full mt-8"
+            ></div>
+            <div
+              class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8"
+            >
+              <div class="flex w-full gap-3 mt-[13px] first:mt-0">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  80 صفحة / شهر
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  إمكانيات اختبار A/B
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  تحليلات متقدمة
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  دعم بريدي ذو أولوية
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-[rgba(0,18,82,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 w-full overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-8 px-5 py-[18px] rounded-[10px] flex items-center justify-center gap-2"
+            >
+              <span>ابدأ الآن</span>
+            </button>
+          </div>
+
+          <!-- Pricing Card 3 (Highlighted) -->
+          <div
+            class="bg-[rgba(0,14,116,1)] min-w-60 overflow-hidden flex-1 shrink basis-[0%] p-6 rounded-xl max-md:px-5"
+          >
+            <div class="flex w-full flex-col">
+              <h3
+                class="text-white text-[27px] font-bold leading-[1.2] tracking-[-0.54px] text-right"
+              >
+                Spark
+              </h3>
+              <div class="flex gap-1 mt-4">
+                <span
+                  class="text-[rgba(134,149,251,1)] text-base font-normal leading-[1.4]"
+                  >/ شهر</span
+                >
+                <span
+                  class="text-white text-[32px] font-bold leading-[1.2] tracking-[-0.64px]"
+                  >$1</span
+                >
+              </div>
+              <p
+                class="text-[rgba(134,149,251,1)] text-lg font-normal leading-[1.4] text-right self-stretch mt-4"
+              >
+                للاختبار والمبتدئين
+              </p>
+            </div>
+            <div
+              class="bg-[rgba(217,217,217,1)] flex min-h-px w-full mt-8"
+            ></div>
+            <div
+              class="flex w-full flex-col text-lg text-white font-normal text-right leading-[1.4] mt-8"
+            >
+              <div class="flex w-full gap-3 mt-[13px] first:mt-0">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  3 صفحات هبوط
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  إنشاء محتوى بالذكاء الاصطناعي
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  تحليلات أساسية
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+              <div class="flex w-full gap-3 mt-[13px]">
+                <div class="min-w-60 flex-1 shrink basis-[0%]">
+                  دعم عبر البريد الإلكتروني
+                </div>
+                <img
+                  src="/placeholder.svg?height=28&width=28"
+                  class="aspect-[1] object-contain w-7 shrink-0 rounded-[14px]"
+                  alt="Check"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-[rgba(38,75,204,1)] shadow-[0px_2px_2px_rgba(81,101,247,1)] min-h-12 w-full overflow-hidden text-base text-[rgba(236,236,236,1)] font-bold mt-8 px-5 py-[18px] rounded-[10px] flex items-center justify-center gap-2"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a197842a0be42f91a362c84388e1e4bd0f54a0ab?placeholderIfAbsent=true"
+                class="w-6 h-6"
+                alt="Start Icon"
+              />
+              <span>ابدأ الآن</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-black self-center flex w-full flex-col items-stretch pt-20 pb-10 px-20 max-md:max-w-full max-md:px-5"
+    >
+      <div
+        class="flex w-full gap-[40px_56px] justify-center flex-wrap max-md:max-w-full"
+      >
+        <div
+          class="flex min-w-60 font-normal text-right leading-none justify-between flex-wrap w-[727px] max-md:max-w-full"
+        >
+          <div class="flex min-w-60 flex-col flex-1 shrink basis-[0%]">
+            <h4 class="text-white text-2xl tracking-[-0.46px]">اتصل بنا</h4>
+            <div
+              class="flex flex-col text-xl text-white whitespace-nowrap tracking-[-0.38px] mt-5"
+            >
+              <a
+                href="mailto:support@blazepage.pro"
+                class="flex items-center gap-2"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a8a37ad8ea2c9739d0dfab309cde97f580927bc1?placeholderIfAbsent=true"
+                  class="aspect-[1] object-contain w-5 self-stretch shrink-0 my-auto"
+                  alt="Email Icon"
+                />
+                <span class="self-stretch my-auto">support@blazepage.pro</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%]"
+          >
+            <h4 class="text-white text-2xl tracking-[-0.46px]">السياسات</h4>
+            <a
+              href="/privacy"
+              class="w-full text-xl text-white tracking-[-0.38px] mt-5"
+            >
+              سياسة الخصوصية
+            </a>
+          </div>
+          <div
+            class="flex min-w-60 flex-col items-stretch whitespace-nowrap flex-1 shrink basis-[0%]"
+          >
+            <h4 class="text-white text-2xl tracking-[-0.46px]">الشركة</h4>
+            <a
+              href="/"
+              class="w-full text-xl text-white tracking-[-0.38px] mt-5"
+            >
+              الرئيسة
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] max-md:max-w-full"
+        >
+          <div
+            class="flex w-full flex-col items-stretch text-right leading-none max-md:max-w-full"
+          >
+            <h3 class="gap-[19px] text-[42px] text-white font-bold">
+              بلايز بايج
+            </h3>
+            <p class="text-white text-2xl font-normal mt-6 max-md:max-w-full">
+              مع BlazePage، كل منتج له قصة تبيع
+            </p>
+          </div>
+          <div class="flex gap-6 mt-11 max-md:mt-10">
+            <img
+              src="/placeholder.svg?height=24&width=24"
+              class="aspect-[1] object-contain w-6 shrink-0"
+              alt="Social 1"
+            />
+            <img
+              src="/placeholder.svg?height=24&width=24"
+              class="aspect-[1] object-contain w-6 shrink-0"
+              alt="Social 2"
+            />
+            <img
+              src="/placeholder.svg?height=24&width=24"
+              class="aspect-[1] object-contain w-6 shrink-0"
+              alt="Social 3"
+            />
+            <img
+              src="/placeholder.svg?height=24&width=24"
+              class="aspect-[1] object-contain w-6 shrink-0"
+              alt="Social 4"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[rgba(34,34,34,1)] flex min-h-0.5 w-full mt-11 max-md:max-w-full max-md:mt-10"
+      ></div>
+      <div
+        class="text-white text-xl font-normal leading-none text-center mt-11 max-md:max-w-full max-md:mt-10"
+      >
+        © 2025 BlazePage. جميع الحقوق محفوظة.
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
